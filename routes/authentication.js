@@ -3,8 +3,8 @@ const user = require("../models/user");
 const bcrypt = require("bcrypt");
 const { body, validationResult } = require("express-validator");
 
-router.post("/logIn", (req, res) => {
-  console.log("LogIn...");
+router.get("/logIn", (req, res) => {
+  res.json({ message: "Backend Login Response" });
 });
 
 module.exports = router;
